@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Delete resource &apos;UTP3_SM_S15541&apos;" deleteContents="true" description="Delete resource &apos;UTP3_SM_S15541&apos;" element1="/UTP3_SM_S15541" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1524681993545"/>
-</session>
