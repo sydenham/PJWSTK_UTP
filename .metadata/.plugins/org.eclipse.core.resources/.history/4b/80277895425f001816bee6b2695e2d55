@@ -1,0 +1,35 @@
+/**
+ *
+ *  @author Szarek Marcin S15541
+ *
+ */
+
+package zad1;
+
+
+import java.math.BigDecimal;
+import java.util.HashMap;
+
+public class Calc {
+	
+    public HashMap<String,  BigDecimal> commands = new HashMap<String, BigDecimal>();
+    
+    
+	public String doCalc(String calc){
+		try {
+			 String [] args = calc.split("\\s+");
+	    	commands.put("+", (new BigDecimal(args[0])).add(new BigDecimal(args[2])));
+	    	commands.put("-", (new BigDecimal(args[0])).subtract(new BigDecimal(args[2])));
+	    	commands.put("*", (new BigDecimal(args[0])).multiply(new BigDecimal(args[2])));
+	    	commands.put("/", (new BigDecimal(args[0])).divide(new BigDecimal(args[2])));
+			return commands.get(args[1]).toString();
+		} catch (Exception e) {
+			return "Invalid command to calc";			
+		}
+	}	
+  
+}
+
+
+	
+	
